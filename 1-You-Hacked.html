@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Wolf | System Breached - Coding Chat Room</title>
+    <style>
+        body {
+            background: black;
+            color: red;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            position: relative;
+            animation: flicker 1s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            animation: glitch 1s infinite alternate, shake 0.5s infinite alternate;
+        }
+
+        span {
+            color: white;
+            text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red;
+            }
+
+            100% {
+                text-shadow: -2px -2px red;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(2px);
+            }
+
+            100% {
+                transform: translateX(-2px);
+            }
+        }
+
+        @keyframes flicker {
+            0% {
+                background: black;
+            }
+
+            100% {
+                background: darkred;
+            }
+        }
+
+        .flashing {
+            animation: flash 0.5s infinite alternate;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+        .terminal {
+            font-size: 1.2rem;
+            background: rgba(255, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            margin-top: 30px;
+            border: 2px solid red;
+            width: 60%;
+            word-wrap: break-word;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(40, end);
+        }
+
+        .terminal p {
+            font-family: monospace;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            animation: typing 3s steps(30, end) forwards;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Insert BeEF script link here -->
+    <h1>You have been hacked by <span>DARK WOLF</span></h1>
+    <p class="flashing">Your system is now under our control...</p>
+    <div class="terminal">
+        <p>Initializing system scan...</p>
+        <p>Accessing personal files... <span class="flashing">✔</span></p>
+        <p>Capturing webcam feed... <span class="flashing">✔</span></p>
+        <p>Uploading sensitive data to our servers... <span class="flashing">✔</span></p>
+        <p class="flashing">Don't mess with <span>DARK WOLF</span></p>
+        <p class="flashing">Agli bar <span>DARK WOLF</span> ko attitude aur ego dekhany ka soch kr bhi dro gy</p>
+    </div>
+</body>
+
+</html>
